@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder By Baqaullah Soomro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editable Resume Builder By Baqaullah Soomro</h1>
+        
+        <!-- Resume Form -->
+        <form id="resumeForm">
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <!-- Education Section -->
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" rows="3" required></textarea>
+            </fieldset>
+
+            <!-- Work Experience Section -->
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" name="experience" rows="3" required></textarea>
+            </fieldset>
+
+            <!-- Skills Section -->
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills (comma-separated):</label>
+                <textarea id="skills" name="skills" rows="3" required></textarea>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Output Section -->
+        <section id="resumeOutput" contenteditable="true">
+            <!-- The dynamically generated resume will appear here -->
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
